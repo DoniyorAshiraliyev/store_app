@@ -18,41 +18,22 @@ class CategoryItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Card(
+      child: Container(
+
         margin: const EdgeInsets.symmetric(horizontal: 5),
-        color: selectedId != null && selectedId == category.id
-            ? Theme.of(context).colorScheme.primaryContainer
-            : Theme.of(context).colorScheme.onPrimary,
-        child: Container(
-          height: 55,
-          alignment: Alignment.center,
-          padding: const EdgeInsets.symmetric(horizontal: 7.5, vertical: 2.5),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            // color: Colors.greenAccent.shade100,
-          ),
-          child: Row(
-            children: [
-              CachedNetworkImage(
-                width: 40,
-                imageUrl: category.imageUrl,
-                progressIndicatorBuilder: (context, url, downloadProgress) =>
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Center(
-                        child: CircularProgressIndicator.adaptive(
-                          value: downloadProgress.progress,
-                          strokeWidth: 1,
-                        ),
-                      ),
-                    ),
-                errorWidget: (context, url, error) => const Icon(Icons.error),
-              ),
-              const SizedBox(width: 5),
-              Text(category.name),
-            ],
-          ),
+
+        height: 55,
+        // width: 130,
+        alignment: Alignment.center,
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 2.5),
+        decoration: BoxDecoration(
+
+          borderRadius: BorderRadius.circular(10),
+          color: selectedId != null && selectedId == category.id
+              ? Colors.white
+              : Colors.white,
         ),
+        child: Text(category.name),
       ),
     );
   }

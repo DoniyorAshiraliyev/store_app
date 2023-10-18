@@ -29,10 +29,10 @@ class _MainScreenState extends State<MainScreen> {
         children:  [
               BlocProvider(
             create: (context) =>
-            locator<HomeBloc>()..add(HomeGetAllProduct()),
+            locator<HomeBloc>()..add(const HomeGetAllProduct()),
 
 
-            child: HomeScreen(),
+            child: const HomeScreen(),
           ),
           // HomeScreen(),
         ],

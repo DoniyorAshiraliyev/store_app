@@ -24,7 +24,7 @@ class ProductModel {
         description: json["description"],
         category: json["category"],
         image: json["image"],
-        rating:ratingModel==null? RatingModel.fromJson(json["rating"]):ratingModel,
+        rating:ratingModel ?? RatingModel.fromJson(json["rating"]),
       );
 
   Map<String, dynamic> toJson() => {

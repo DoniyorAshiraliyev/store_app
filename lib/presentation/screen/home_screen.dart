@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
         automaticallyImplyLeading: false,
         backgroundColor: Colors.black,
         centerTitle: false,
-        title: Column(
+        title: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 45,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(16),
-              image: DecorationImage(
+              image: const DecorationImage(
                 image: NetworkImage(
                     "https://img.freepik.com/free-photo/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg"),
                 fit: BoxFit.cover,
@@ -177,7 +177,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               if (category.id == "all") {
                                 context
                                     .read<HomeBloc>()
-                                    .add(HomeGetAllProduct());
+                                    .add(const HomeGetAllProduct());
                                 return;
                               }
                               context.read<HomeBloc>().add(
@@ -229,7 +229,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           if (state is HomeLoadingState)
-                            Center(
+                            const Center(
                               child: CircularProgressIndicator(),
                             )
                         ],

@@ -17,8 +17,8 @@ class _OrderScreenState extends State<OrderScreen> {
     final size = MediaQuery.sizeOf(context);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFFF9F9F9),
-        title: Text(
+        backgroundColor: const Color(0xFFF9F9F9),
+        title: const Text(
           'Order',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -65,7 +65,7 @@ class _OrderScreenState extends State<OrderScreen> {
                       top: 4, left: 5, right: 6, bottom: 4),
                   clipBehavior: Clip.antiAlias,
                   decoration: ShapeDecoration(
-                    color: Color(0xFFEFEFEF),
+                    color: const Color(0xFFEFEFEF),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),
                     ),
@@ -82,12 +82,12 @@ class _OrderScreenState extends State<OrderScreen> {
                               horizontal: 14, vertical: 10),
                           clipBehavior: Clip.antiAlias,
                           decoration: ShapeDecoration(
-                            color: Color(0xFFC67C4E),
+                            color: const Color(0xFFC67C4E),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -117,7 +117,7 @@ class _OrderScreenState extends State<OrderScreen> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.center,
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -140,7 +140,7 @@ class _OrderScreenState extends State<OrderScreen> {
                   ),
                 ),
               ),
-              Text(
+              const Text(
                 'Delivery Address',
                 style: TextStyle(
                   color: Color(0xFF2F2D2C),
@@ -150,7 +150,7 @@ class _OrderScreenState extends State<OrderScreen> {
                   height: 0,
                 ),
               ),
-              Text(
+              const Text(
                 'Jl. Kpg Sutoyo',
                 style: TextStyle(
                   color: Color(0xFF303336),
@@ -160,7 +160,7 @@ class _OrderScreenState extends State<OrderScreen> {
                   height: 0,
                 ),
               ),
-              Text(
+              const Text(
                 'Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.',
                 style: TextStyle(
                   color: Color(0xFF7F7F7F),
@@ -170,7 +170,7 @@ class _OrderScreenState extends State<OrderScreen> {
                   height: 0,
                 ),
               ),
-              Text(
+              const Text(
                 'Payment Summary',
                 style: TextStyle(
                   color: Color(0xFF2E2D2C),
@@ -180,7 +180,7 @@ class _OrderScreenState extends State<OrderScreen> {
                   height: 0,
                 ),
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -206,7 +206,7 @@ class _OrderScreenState extends State<OrderScreen> {
                   ),
                 ],
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -232,8 +232,8 @@ class _OrderScreenState extends State<OrderScreen> {
                   ),
                 ],
               ),
-              Divider(),
-              Row(
+              const Divider(),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
@@ -272,16 +272,16 @@ class _OrderScreenState extends State<OrderScreen> {
           height: 100,
           child: Column(
             children: [
-              Icon(Icons.more_horiz),
+              const Icon(Icons.more_horiz),
               Container(
                 width: 315,
                 height: 55,
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: Color(0xFFC67C4E),
+                  color: const Color(0xFFC67C4E),
                   borderRadius: BorderRadius.circular(16),
                 ),
-                child: Text(
+                child: const Text(
                   'Order',
                   style: TextStyle(
                     color: Colors.white,

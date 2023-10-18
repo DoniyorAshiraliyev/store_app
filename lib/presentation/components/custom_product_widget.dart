@@ -1,6 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 import 'package:store_app/domain/models/product.dart';
 
 class CustomProductWidget extends StatelessWidget {
@@ -16,7 +15,7 @@ class CustomProductWidget extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(8.0),
 
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.all(
           Radius.circular(20),
@@ -58,7 +57,7 @@ class CustomProductWidget extends StatelessWidget {
                       Text(
                         product.title,
                         maxLines: 2,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFF2F2D2C),
                           fontSize: 16,
                           fontFamily: 'Sora',
@@ -68,7 +67,7 @@ class CustomProductWidget extends StatelessWidget {
                       ),
                       Text(
                         product.category.toUpperCase(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFF9B9B9B),
                           fontSize: 12,
                           fontFamily: 'Sora',
@@ -82,7 +81,7 @@ class CustomProductWidget extends StatelessWidget {
                     children: [
                       Text(
                         '\$ ${product.price}',
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFF2F4B4E),
                           fontSize: 18,
                           fontFamily: 'Sora',
@@ -90,16 +89,16 @@ class CustomProductWidget extends StatelessWidget {
                           height: 0,
                         ),
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 35,
                         width: 35,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Color(0xffc67c4e),
+                          color: const Color(0xffc67c4e),
                         ),
-                        child: Text(
+                        child: const Text(
                           "+",
                           style: TextStyle(color: Colors.white, fontSize: 24),
                         ),

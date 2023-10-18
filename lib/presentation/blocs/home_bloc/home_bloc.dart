@@ -10,7 +10,7 @@ part 'home_state.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
   final ProductRepository repository;
-  HomeBloc(this.repository) : super(HomeInitial(products: [])) {
+  HomeBloc(this.repository) : super(const HomeInitial(products: [])) {
     on<HomeEvent>((event, emit) => switch(event) {
       HomeGetAllProduct e => _getAllProduct(e, emit),
       HomeGetProductWithCategory e => _getProductWithCategory(e, emit),

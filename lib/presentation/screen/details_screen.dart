@@ -20,10 +20,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
     final size = MediaQuery.sizeOf(context);
     final ProductModel product = widget.product;
     return Scaffold(
-      backgroundColor: Color(0xFFF9F9F9),
+      backgroundColor: const Color(0xFFF9F9F9),
       appBar: AppBar(
-        backgroundColor: Color(0xFFF9F9F9),
-        title: Text(
+        backgroundColor: const Color(0xFFF9F9F9),
+        title: const Text(
           'Detail',
           textAlign: TextAlign.center,
           style: TextStyle(
@@ -58,7 +58,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
       body: Column(
         children: [
           Container(
-            margin: EdgeInsets.only(left: 30, right: 30, top: 30),
+            margin: const EdgeInsets.only(left: 30, right: 30, top: 30),
             width: double.infinity,
             decoration: BoxDecoration(
                 color: Colors.black, borderRadius: BorderRadius.circular(30)),
@@ -82,7 +82,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       const SizedBox(height: 8),
                       Text(
                         product.title,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFF2E2D2C),
                           fontSize: 20,
                           fontFamily: 'Sora',
@@ -90,10 +90,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           height: 0,
                         ),
                       ),
-                      Gap(5),
+                      const Gap(5),
                       Text(
                         product.category.toUpperCase(),
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFF9B9B9B),
                           fontSize: 12,
                           fontFamily: 'Sora',
@@ -101,7 +101,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           height: 0,
                         ),
                       ),
-                      Row(
+                      const Row(
                         children: [
                           Icon(
                             Icons.star,
@@ -135,11 +135,11 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           ),
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 20,
                       ),
-                      Divider(),
-                      Text(
+                      const Divider(),
+                      const Text(
                         'Description',
                         style: TextStyle(
                           color: Color(0xFF2E2D2C),
@@ -149,7 +149,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           height: 0,
                         ),
                       ),
-                      Gap(15),
+                      const Gap(15),
                       SizedBox(
                         width: 360,
                         child: Text(
@@ -191,7 +191,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         'Price',
                         style: TextStyle(
                           color: Color(0xFF9B9B9B),
@@ -203,7 +203,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       ),
                       Text(
                         "\$ ${widget.product.price}",
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Color(0xFFC67C4E),
                           fontSize: 18,
                           fontFamily: 'Sora',
@@ -218,12 +218,12 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     width: size.width * .5,
                     height: 55,
                     decoration: ShapeDecoration(
-                      color: Color(0xFFC67C4E),
+                      color: const Color(0xFFC67C4E),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(16),
                       ),
                     ),
-                    child: Text(
+                    child: const Text(
                       'Buy Now',
                       style: TextStyle(
                         color: Colors.white,

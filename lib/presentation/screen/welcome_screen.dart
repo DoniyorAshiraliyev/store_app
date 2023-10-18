@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:store_app/core/service_locator.dart';
-import 'package:store_app/presentation/blocs/home_bloc/home_bloc.dart';
-import 'package:store_app/presentation/screen/home_screen.dart';
 import 'package:store_app/presentation/screen/main_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
@@ -36,12 +32,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           ),
           Align(
             alignment: Alignment.bottomCenter,
-            child: Container(
+            child: SizedBox(
               height: size.height * .5,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Text(
+                  const Text(
                     'Coffee so good, your taste buds will love it.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -53,10 +49,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       letterSpacing: 0.34,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Text(
+                  const Text(
                     'The best grain, the finest roast, the powerful flavor.',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -68,7 +64,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       letterSpacing: 0.14,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Container(
@@ -80,7 +76,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      shadows: [
+                      shadows: const [
                         BoxShadow(
                           color: Color(0x2A000000),
                           blurRadius: 3,
@@ -98,7 +94,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     child: GestureDetector(
                       onTap: () => Navigator.of(context).push(
                         MaterialPageRoute(
-                            builder: (_) => MainScreen()
+                            builder: (_) => const MainScreen()
 
                         ),
                       ),
@@ -139,7 +135,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   )
                 ],
